@@ -43,12 +43,12 @@ app.controller('quoteController',function($scope)
 	['It always seems impossible untill it\'s done','Nelson Mandela'],
 	['Don\'t wait for opportunity. create it.'],
 	['Don\'t quit. suffer now and live the rest of your life as a champion.','Muhammad Ali'],
-	['I have not failed. I’ve just found 10,000 ways that won’t work.','Thomas Edison'],
+	['I have not failed. I\'ve just found 10,000 ways that won\'t work.','Thomas Edison'],
 	['It\'s fine to celebrate success but it is more important to heed the lessons of failure.',  'Bill Gates'],
 	['If you cannot do great things, do small things in a great way.' ,'Napoleon Hill'],
 	['Success is walking from failure to failure with no loss of enthusiasm.',' Winston Churchill'],
 	['Winners never quit, and quitters never win.','Vince Lombardi'],
-	['Nothing is impossible, the word itself says “I’m possible”! ','Audrey Hepburn'],
+	['Nothing is impossible, the word itself says "I\'m possible"! ','Audrey Hepburn'],
 	['The only way to do great work is to love what you do.','Steve Jobs'],
 	['A person who never made a mistake never tried anything new.','Albert Einstein'],
 	['All our dreams can come true, if we have the courage to pursue them.', 'Walt Disney'],
@@ -61,6 +61,8 @@ app.controller('quoteController',function($scope)
 	
 	console.log(rand)
 	var index=Math.round(rand)
+	if (index < 1)
+		index*= -1
 	console.log(index)
 	$scope.gradient="gradient-"+index%11
 	console.log($scope.gradient)
