@@ -1,0 +1,19 @@
+<html >
+<title>Random Quotes</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400i" rel="stylesheet">
+<script type="text/javascript" src="scripts/angular.min.js"></script>
+<script type="text/javascript" src="scripts/myscript.js"></script>
+<body  ng-class='gradient' ng-app='quotes' ng-controller='quoteController' >
+
+<div id="content">
+<div id="quote">
+	{{quote}}
+</div>
+<div id="name">
+<span ng-if='name'> - {{name}}</span>
+
+</div>
+</div>
+</body>
+</html>
